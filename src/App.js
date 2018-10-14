@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import Card from './Card';
 import data from './data'
 
@@ -32,9 +32,15 @@ prevProperty = () => {
     return (
       <div className="App">
         <div className="col">
-          {
-            <Card key={property.index} property={property} />
-          }
+          <div className="cards-slider">
+            <div className="cards-slider-wrapper" style={{
+                  'transform': `translateX(-${property.index*(100/properties.length)}%)`
+                }}>
+            {
+              properties.map(property => <Card key={property.index} property={property} />)
+            }
+            </div>
+          </div>
         </div>
         <div className="buttons">
           <button
