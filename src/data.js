@@ -196,7 +196,7 @@ const data = {
         "bathrooms": 2,
         "carSpaces": 2
     }
-    ]
+  ]
 }
 
 export default data;
