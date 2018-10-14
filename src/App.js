@@ -16,7 +16,7 @@ class App extends Component {
     const { properties } = this.state;
     return (
       <div className="App">
-        <div>
+        <div className="col">
           {
             properties.map(property => <Card key={property.index} property={property} />)
           }
