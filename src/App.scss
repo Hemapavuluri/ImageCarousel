@@ -19,7 +19,7 @@
   margin-top: 100px;
   .disabled {
      background-color: $grey;
-     cursor: not-allowed;
+     pointer-events: none;
   }
   button {
     padding: 10px;
