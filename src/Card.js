@@ -15,18 +15,9 @@ const Card = ({property}) => {
                     {address}
                 </p>
                 <ul className="features">
-                    <li><FontAwesome
-        name='bed'
-        size='x'
-      />{bedrooms}</li>
-                    <li><FontAwesome
-        name='bath'
-        size='x'
-      />{bathrooms}</li>
-                    <li><FontAwesome
-        name='car'
-        size='x'
-      />{carSpaces}</li>
+                    <li><FontAwesome name='bed' /><span>{bedrooms}</span></li>
+                    <li><FontAwesome name='bath'/><span>{bathrooms}</span></li>
+                    <li><FontAwesome name='car' /><span>{carSpaces}</span></li>
                 </ul>
             </div>
         </div>
