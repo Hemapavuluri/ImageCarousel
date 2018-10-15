@@ -33,7 +33,7 @@ render() {
   return (
     <div className="App">
       <div className="col">
-        <div className="cards-slider">
+        <div className={`cards-slider active-slide-${property.index}`}>
           <div
             className="cards-slider-wrapper"
             style={{
