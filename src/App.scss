@@ -29,7 +29,20 @@
 }
 
 .buttons {
-  padding: 25px;
+  margin-right: 35px;
+  .disabled {
+     background-color: grey;
+     cursor: not-allowed;
+  }
+  button {
+    padding: 10px;
+    width: 100px;
+    color: #fff;
+    background-color: green;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 5px;
+  }
 }
 
 .cards-slider {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.scss';
 import Card from './Card';
-import data from './data'
+import data from './data';
 
 class App extends Component {
 
@@ -46,12 +46,13 @@ prevProperty = () => {
           <button
             onClick={() => this.nextProperty()}
             disabled={property.index === data.properties.length-1}
+            className={`${property.index === data.properties.length-1 ? 'disabled' : ''}`}
           >
             Next
           </button>
           <button
             onClick={() => this.prevProperty()}
-            disabled={property.index === 0}
+            className={`${property.index === 0 ? 'disabled' : ''}`}
           >
             Prev
           </button>
