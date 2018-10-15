@@ -1,4 +1,5 @@
 import React from 'react';
+import FontAwesome from 'react-fontawesome';
 import PropTypes from 'prop-types';
 import './Card.scss';
 
@@ -14,9 +15,18 @@ const Card = ({property}) => {
                     {address}
                 </p>
                 <ul className="features">
-                    <li>{bedrooms}</li>
-                    <li>{bathrooms}</li>
-                    <li>{carSpaces}</li>
+                    <li><FontAwesome
+        name='bed'
+        size='x'
+      />{bedrooms}</li>
+                    <li><FontAwesome
+        name='bath'
+        size='x'
+      />{bathrooms}</li>
+                    <li><FontAwesome
+        name='car'
+        size='x'
+      />{carSpaces}</li>
                 </ul>
             </div>
         </div>
