@@ -41,7 +41,7 @@ render() {
             }}
           >
             {
-              properties.map(eachProperty => <Card key={eachProperty.index} property={property} />)
+              properties.map(property => <Card key={property.index} property={property} />)
             }
           </div>
         </div>
