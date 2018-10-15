@@ -33,6 +33,7 @@ render() {
   return (
     <div className="App">
       <div className="col">
+        <h1>Image Carousel App</h1>
         <div className={`cards-slider active-slide-${property.index}`}>
           <div
             className="cards-slider-wrapper"
